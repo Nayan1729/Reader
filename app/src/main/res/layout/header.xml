@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#7418E4"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:contentDescription="@string/header_image"/>
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Govinda Prajapati"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="govinda2x7@gmail.com"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

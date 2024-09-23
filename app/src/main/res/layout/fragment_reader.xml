@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- A simple TextView to indicate selected file or placeholder text -->
+    <TextView
+        android:id="@+id/tvFileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select an ePub file to read."
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Placeholder for any future file content view (like WebView for ePub) -->
+    <FrameLayout
+        android:id="@+id/fileContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />  <!-- Hidden initially until a file is selected -->
+
+</FrameLayout>
