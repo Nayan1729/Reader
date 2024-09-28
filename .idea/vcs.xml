@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FolioReader-Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/epublib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/epublib-releases" vcs="Git" />
   </component>
 </project>

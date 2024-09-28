@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.navigationdrawer'
-    compileSdk 34
+    compileSdkVersion 34  // <-- Add this line to specify compileSdkVersion
 
     defaultConfig {
         applicationId "com.example.navigationdrawer"
-        minSdk 24
-        targetSdk 34
+        minSdkVersion 24  // <-- You also need to specify minSdkVersion
+        targetSdkVersion 34  // <-- Add this for clarity
         versionCode 1
         versionName "1.0"
 
@@ -22,6 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -30,6 +31,10 @@ android {
 
 dependencies {
     implementation 'com.google.android.material:material:1.9.0'
+    implementation files('libs/epublib-1.0-SNAPSHOT.one-jar.jar')
+    implementation('nl.siegmann.epublib:epublib-core:3.1') {
+        exclude group: 'xmlpull', module: 'xmlpull'
+    }
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
